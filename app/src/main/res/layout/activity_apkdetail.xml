@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_apk_detail" />
+
+    <!-- apk info -->
+
+    <ScrollView
+        android:id="@+id/scrollview_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_bottom_progress"
+        android:layout_below="@id/title_bar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/apk_icon"
+                        android:layout_width="77dip"
+                        android:layout_height="77dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="7dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="7dip"
+                        android:background="@drawable/default_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_apk_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/apk_icon"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@id/apk_icon"
+                        android:text="酷狗音乐播放器"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_apk_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_apk_name"
+                        android:layout_below="@id/tv_apk_name"
+                        android:layout_marginTop="5dip"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="影音播放"
+                        android:textColor="@color/text_color_light_black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/apk_download_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_apk_type"
+                        android:layout_below="@id/tv_apk_type"
+                        android:layout_marginTop="6dip"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="15.41M 211万次下载"
+                        android:textColor="@color/text_color_light_black"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dip"
+                    android:background="@color/line_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="12dip"
+                            android:layout_height="15dip"
+                            android:background="@drawable/mzs_icon_official" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:text="官方"
+                            android:textColor="@color/text_color_green"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="5dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="12dip"
+                            android:layout_height="15dip"
+                            android:background="@drawable/mzs_icon_official" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:text="无毒"
+                            android:textColor="@color/text_color_green"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="5dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="12dip"
+                            android:layout_height="15dip"
+                            android:background="@drawable/mzs_icon_official" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:text="白名单"
+                            android:textColor="@color/text_color_green"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 预览图 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/show_1" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:background="@drawable/show_2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:background="@drawable/show_3" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:background="@drawable/show_4" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:background="@drawable/show_5" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <!-- 软件描述 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="游戏简介"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_apk_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="15dip"
+                    android:lineSpacingExtra="4dip"
+                    android:text="《超级斩击 Mega Slash》是一款有趣的动作游戏。游戏画面非常炫酷，游戏操作也是充满着震撼。纵身而起，怒斩外星人建筑~外星人前来侵略地球了，你将要控制英雄（KALEL、维克多、礼来）联手阻止他们的进攻。游戏中利用虚拟按键模式，可以控制英雄移动到左，右和跳跃。英雄通过右侧按键（A）进行攻击，破坏建筑，按键（B）进行防御。如果你没有摧毁所有的敌人，那BOSS将会入侵地球。游戏还有多个技能，赶紧来试试吧~~"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 更新说明 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="更新提示"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_apk_update_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:lineSpacingExtra="4dip"
+                    android:text="- 每日签到双倍奖励，累计20次还有超级赛车等你拿。\n- 全新每日任务，完成粉红猫的课题赢取海量宝石。\n- 激情一夏，你来重组汽车人。每天前十局“绝迹重生”挑战，红色火种奖励+50%。\n- 全程钜惠，限时抢购，每天一部超级赛车8折抢购。\n- 更多精彩内容，等你来战。"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Relative apk -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_margin="5dip"
+                android:background="@color/white"
+                android:orientation="vertical" >
+                
+               <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="游戏推荐"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_relative_apk"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip"
+                    android:background="@color/transparent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ViewStub
+        android:id="@+id/vs_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/viewstub_loading" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_progress"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/line_bg_light" />
+
+        <com.mzs.market.widget.ProgressTextView
+            android:id="@+id/pb_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/btn_gray_bg_selector"
+            android:gravity="center"
+            android:text="0%"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_download"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/btn_download_selector"
+            android:gravity="center"
+            android:text="点击下载"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

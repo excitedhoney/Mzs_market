@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg" >
+
+    <com.mzs.market.widget.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip" >
+
+        <include layout="@layout/header_list_refresh" />
+
+        <com.mzs.market.widget.PullToRefreshListView
+            android:id="@+id/pull_choice_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="5dip" />
+
+    </com.mzs.market.widget.PullToRefreshLayout>
+
+    <ViewStub
+        android:id="@+id/vs_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/viewstub_loading" />
+
+</RelativeLayout>

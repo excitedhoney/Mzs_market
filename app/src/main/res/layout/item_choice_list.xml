@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lv_selector_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip" >
+
+        <ImageView
+            android:id="@+id/apk_icon"
+            android:layout_width="77dip"
+            android:layout_height="77dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip" />
+
+        <TextView
+            android:id="@+id/apk_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/apk_icon"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="80dip"
+            android:layout_toRightOf="@id/apk_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="360手机卫士"
+            android:textColor="@color/text_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btn_download"
+            android:layout_width="70dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/apk_name"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_download_selector"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/download_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/apk_name"
+            android:layout_below="@id/apk_name"
+            android:layout_marginTop="2dip"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="65359万次下载"
+            android:textColor="@color/text_color_light_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/apk_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/download_count"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/download_count"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="14.81M"
+            android:textColor="@color/text_color_light_grey"
+            android:textSize="12sp" />
+
+        <!-- 下载进度 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/apk_size"
+            android:layout_alignLeft="@id/apk_name"
+            android:layout_marginRight="10dip"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/btn_download" >
+
+            <ProgressBar
+                android:id="@+id/pb_download"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/progress_bar_bg"
+                android:max="100"
+                android:progress="20"
+                android:progressDrawable="@drawable/progress_bar_progress" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/pb_download"
+                android:layout_alignParentRight="true"
+                android:text="15.6%"
+                android:textColor="#BDBDBD"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/pb_download"
+                android:layout_alignParentLeft="true"
+                android:text="0KB/s"
+                android:textColor="#BDBDBD"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/apk_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/download_count"
+            android:layout_below="@id/download_count"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="4dip"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="最好用的手机安全软件，提供专业的手机安全服务"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lv_selector_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toLeftOf="@+id/expandable_toggle_button"
+            android:layout_toRightOf="@id/app_icon" >
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="360手机卫士"
+                android:textColor="@color/text_color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/app_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/app_name"
+                android:layout_below="@id/app_name"
+                android:layout_marginTop="8dip"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="占用空间：14.84MB"
+                android:textColor="@color/text_color_grey"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/expandable_toggle_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_detail_indicator_down" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line_bg_light" />
+
+    <LinearLayout
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/rl_install_apk"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/lv_selector_bg"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:background="@drawable/icon_apk_install" />
+
+            <TextView
+                android:id="@+id/tv_apk_install"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:text="安装"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="@color/line_bg_light" />
+
+        <LinearLayout
+            android:id="@+id/rl_delete_apk"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/lv_selector_bg"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:background="@drawable/icon_delete" />
+
+            <TextView
+                android:id="@+id/tv_apk_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:text="删除"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

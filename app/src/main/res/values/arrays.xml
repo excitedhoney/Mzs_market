@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorys">
+        <item>默认</item>
+        <item>产品安装</item>
+        <item>产品使用</item>
+        <item>功能建议</item>
+        <item>Bug反馈</item>
+        <item>机型支持</item>
+        <item>网络异常</item>
+        <item>无法下载</item>
+    </string-array>
+</resources>

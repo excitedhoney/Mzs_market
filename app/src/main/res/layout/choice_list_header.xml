@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dip"
+        android:layout_marginTop="5dip" >
+
+        <org.taptwo.android.widget.ViewFlow
+            android:id="@+id/choice_banner_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <org.taptwo.android.widget.CircleFlowIndicator
+            xmlns:app="http://schemas.android.com/apk/res/com.mzs.market"
+            android:id="@+id/choice_banner_indicator"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="2dip"
+            app:activeColor="@color/white"
+            app:activeType="fill"
+            app:circleSeparation="10dip"
+            app:inactiveColor="@color/white"
+            app:inactiveType="stroke"
+            android:layout_marginBottom="5dip"
+            app:radius="3dip" />
+    </FrameLayout>
+
+</merge>

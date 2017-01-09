@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ProgressBar
+        android:id="@+id/pbar"
+        style="@style/mzs_item_loading_progressbar"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/mzs_pb_cricle_style" />
+
+    <TextView
+        android:id="@+id/mzs_loading_text"
+        style="@style/mzs_loading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pbar"
+        android:layout_marginTop="3dip"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

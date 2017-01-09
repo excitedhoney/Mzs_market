@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:orientation="vertical" >
+
+    <!-- viewpager indicator -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip" >
+
+       <RadioGroup
+            android:id="@+id/rg_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_app_rank"
+                style="@style/tab_indicator_btn"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="应用排行" 
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rb_game_rank"
+                style="@style/tab_indicator_btn"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="游戏排行" />
+
+        </RadioGroup>
+        
+        <org.taptwo.android.widget.UnderlinePageIndicator
+			android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="2dip"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

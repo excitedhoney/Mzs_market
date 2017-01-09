@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lv_selector_bg" >
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="15dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toLeftOf="@+id/btn_uninstall"
+        android:layout_toRightOf="@id/app_icon" >
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="360手机卫士"
+            android:textColor="@color/text_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/app_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/app_name"
+            android:layout_below="@id/app_name"
+            android:layout_marginTop="8dip"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="占用空间：14.84MB"
+            android:textColor="@color/text_color_green"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_uninstall"
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/btn_download_selector"
+        android:gravity="center"
+        android:text="卸载"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

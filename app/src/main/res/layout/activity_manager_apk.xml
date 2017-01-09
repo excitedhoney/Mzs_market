@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_down_list" />
+
+    <com.mzs.market.widget.slidelistview.ActionSlideExpandableListView
+        android:id="@+id/lv_apk_manager_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="5dip"
+        android:scrollbars="none" />
+
+    <ViewStub
+        android:id="@+id/vs_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/viewstub_loading" />
+
+</RelativeLayout>

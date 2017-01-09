@@ -1,0 +1,44 @@
+﻿{
+    "game_category": [
+        {
+            "cateogty_id": 0,
+            "category_name": "休闲益智",
+            "category_icon_url": "http://img03.muzhiwan.com//2014/05/08/com.melesta.toydefense4536b2a909dd3e/w124_98.png"
+        },
+        {
+            "cateogty_id": 1,
+            "category_name": "动作跑酷",
+            "category_icon_url": "http://img01.muzhiwan.com//2014/05/22/com.ahzs.sy4399_100177/537df726b53be_98.png"
+        },
+        {
+            "cateogty_id": 2,
+            "category_name": "休闲益智",
+            "category_icon_url": "http://img02.muzhiwan.com//2014/07/12/com.gameloft.android.ANMP.GloftM4HM_101254/53c0c624bf4c4_98.png"
+        },
+        {
+            "cateogty_id": 3,
+            "category_name": "卡牌游戏",
+            "category_icon_url": "http://img03.muzhiwan.com//2014/05/08/com.melesta.toydefense4536b2a909dd3e/w124_98.png"
+        },
+        {
+            "cateogty_id": 4,
+            "category_name": "网络游戏",
+            "category_icon_url": "http://img02.muzhiwan.com//2014/05/11/com.happygiant.ntp536ee6d6228c6/w124_98.png"
+        },
+        {
+            "cateogty_id": 5,
+            "category_name": "棋牌天地",
+            "category_icon_url": "http://img02.muzhiwan.com//2014/07/11/com.g5e.leftinthedark.android_102021/53bf78862cf3a_98.png"
+        },
+        {
+            "cateogty_id": 6,
+            "category_name": "经营策略",
+            "category_icon_url": "http://img.naitang.com/160x160/201403/18/110958_1674.png"
+        },
+        {
+            "cateogty_id": 7,
+            "category_name": "飞行射击",
+            "category_icon_url": "http://img.naitang.com/160x160/201403/21/174944_1329.png"
+        }
+    ]
+}

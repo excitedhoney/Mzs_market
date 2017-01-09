@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <declare-styleable name="NumberProgressBar">
-        <attr name="progress" format="integer" />
-        <attr name="max" format="integer" />
-        <attr name="progress_unreached_color" format="color" />
-        <attr name="progress_reached_color" format="color" />
-        <attr name="progress_reached_bar_height" format="dimension" />
-        <attr name="progress_unreached_bar_height" format="dimension" />
-        <attr name="progress_text_size" format="dimension" />
-        <attr name="progress_text_color" format="color" />
-        <attr name="progress_text_offset" format="dimension" />
-        <attr name="progress_text_visibility" format="enum">
-            <enum name="visible" value="0" />
-            <enum name="invisible" value="1" />
-        </attr>
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
     </declare-styleable>
-    <declare-styleable name="Indicator">
-        <attr name="color1" format="color|reference" />
-        <attr name="height1" format="dimension|reference" />
-    </declare-styleable>
-    <declare-styleable name="Lrc">
-        <attr name="textSize1" format="dimension" />
-        <attr name="normalTextColor" format="reference|color" />
-        <attr name="currentTextColor" format="reference|color" />
-        <attr name="dividerHeight" format="dimension" />
-        <attr name="rows" format="integer" />
-    </declare-styleable>
-
-
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="spacing" format="dimension" />
+		<attr name="centered" format="boolean" />
+		<attr name="fadeOut" format="integer" />
+		<attr name="circleSeparation" format="dimension"/>
+		<attr name="activeRadius" format="dimension"/>
+		<attr name="inactiveType">
+			<flag name="stroke" value="0" />
+			<flag name="fill" value="1" />
+		</attr>
+		<attr name="activeType">
+			<flag name="stroke" value="0" />
+			<flag name="fill" value="1" />
+		</attr>
+		<attr name="snap" format="boolean" />
+    </declare-styleable>    
+    <declare-styleable name="TitleFlowIndicator">
+        <attr name="titlePadding" format="dimension" />
+        <!-- Left/right padding of not active view titles. -->
+        <attr name="clipPadding" format="dimension" />
+        <attr name="selectedColor" format="color" />
+        <attr name="selectedBold" format="boolean" />
+        <attr name="selectedSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="footerLineHeight" format="dimension" />
+        <attr name="footerColor" format="color" />
+        <attr name="footerTriangleHeight" format="dimension" />
+        <attr name="customTypeface" format="string" />
+    </declare-styleable> 
 </resources>

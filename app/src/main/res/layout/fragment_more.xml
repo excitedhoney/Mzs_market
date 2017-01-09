@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <!-- 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin_top"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_app_update"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:clickable="true"
+                android:background="@drawable/lv_selector_bg" >
+
+                <View
+                    android:id="@+id/icn_update"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/pp_icon_manager_app_update" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/icn_update"
+                    android:text="应用更新"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_bg_light" />
+
+            <!-- 下载管理 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_app_manager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:clickable="true"
+                android:background="@drawable/lv_selector_bg" >
+
+                <View
+                    android:id="@+id/icn_download"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/pp_icon_manager_install_pkg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/icn_download"
+                    android:text="安装包管理"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_bg_light" />
+
+            <!-- 应用卸载 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_app_uninstall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:clickable="true"
+                android:background="@drawable/lv_selector_bg" >
+
+                <View
+                    android:id="@+id/icn_app_uninstall"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/pp_icon_manager_app_uninstall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/icn_app_uninstall"
+                    android:text="应用卸载"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_bg_light" />
+
+            <!-- 应用搬家 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_app_move"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:clickable="true"
+                android:background="@drawable/lv_selector_bg" >
+
+                <View
+                    android:id="@+id/icn_app_move"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/pp_icon_manager_app_move" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/icn_app_move"
+                    android:text="应用搬家"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin_top"
+            android:orientation="vertical" >
+
+            <!-- 连接电脑 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_connect_pc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:clickable="true"
+                android:background="@drawable/lv_selector_bg" >
+
+                <View
+                    android:id="@+id/icn_connect_pc"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/pp_icon_manager_connect_pc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/icn_connect_pc"
+                    android:text="连接电脑"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_bg_light" />
+            <!-- 用户中心 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_user_center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:clickable="true"
+                android:background="@drawable/lv_selector_bg" >
+
+                <View
+                    android:id="@+id/icn_user_center"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/pp_icon_manager_privacy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/icn_user_center"
+                    android:text="用户中心"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <!-- 设置 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_bg_light" />
+
+            <RelativeLayout
+                android:id="@+id/rl_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:clickable="true"
+                android:background="@drawable/lv_selector_bg" >
+
+                <View
+                    android:id="@+id/icn_setting"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/pp_icon_manager_setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/icn_setting"
+                    android:text="设置"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!-- 反馈 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/line_bg_light" />
+
+            <RelativeLayout
+                android:id="@+id/rl_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:clickable="true"
+                android:background="@drawable/lv_selector_bg" >
+
+                <View
+                    android:id="@+id/icn_feedback"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/pp_icon_manager_feedback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_toRightOf="@id/icn_feedback"
+                    android:text="反馈"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#03A9F4</color>
-    <color name="colorPrimaryDark">#0288D1</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="actionsheet_blue">#037BFF</color>
-    <color name="actionsheet_gray">#8F8F8F</color>
-    <color name="black">#000000</color>
-    <color name="main_dark">#FF535353</color>
-    <color name="white">#ffffff</color>
-    <color name="gray_de">#666666</color>
-    <color name="list_item_press">#216b74ff</color>
-    <color name="primary_text">#212121</color>
-    <color name="swipe_one">#f7e79c</color>
-    <color name="swipe_two">#4cd964</color>
-
-
-
-
-
+    <color name="transparent">#00000000</color>
+    <color name="ibtn_press_bg">#10000000</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+	<color name="text_color_black">#333333</color>
+	<color name="text_color_green">#ff00b800</color>
+	<color name="text_color_green_pressed">#46A033</color>
+	<color name="text_color_grey">#B2B2B2</color>
+	<color name="text_color_light_grey">#BCBCBC</color>
+    <color name="text_color_light_black">#898989</color>
+	<color name="line_bg">#D0D0D0</color>
+	<color name="list_bg">#EBEBEB</color>
+	<color name="line_bg_light">#EFEFEF</color>
+	<color name="list_selector_pressed">#F7F7F7</color>
+	<color name="progress_bar_bg">#D8D7D7</color>
+	<color name="btn_gray_normal">#D3D3D3</color>
+	<color name="btn_gray_pressed">#BDBDBD</color>
+	<color name="gray_5d5d5d">#5D5D5D</color>
 </resources>

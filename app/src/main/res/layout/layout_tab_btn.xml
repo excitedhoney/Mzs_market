@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <ImageView 
+        android:id="@+id/im_top"
+        android:layout_width="23dip"
+        android:layout_height="23dip"
+        android:background="@drawable/bottombar_recommend_selector"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dip"/>
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="推荐"
+        android:textColor="@color/tab_home_txt_selector"
+        android:textSize="14sp"
+        android:layout_marginTop="2dip"
+        android:layout_below="@id/im_top"
+        android:layout_centerHorizontal="true"/>
+
+</merge>
